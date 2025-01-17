@@ -1,0 +1,13 @@
+name: remote-sensing-segmentation
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.9
+  - pip
+  - numpy
+  - matplotlib
+  - tqdm
+  - scikit-learn
+  - pip:
+      - -r requirements.txt
