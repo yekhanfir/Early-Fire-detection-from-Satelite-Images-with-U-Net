@@ -1,5 +1,6 @@
 import torch
 import torch.nn as nn
+from tqd import tqdm
 
 def partial_cross_entropy_loss(predictions, labels, labeled_mask):
     labeled_predictions = predictions[labeled_mask]
