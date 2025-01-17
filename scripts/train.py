@@ -3,7 +3,7 @@ import torch
 from torch.utils.data import DataLoader
 from src.models.unet_model import get_unet_model
 from src.utils.dataset import SegmentationDataset
-from src.utils.train_utils import train_model, validate_model
+from src.utils.train_utils import train_model
 from datasets import load_dataset
 
 # Load the dataset
