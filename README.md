@@ -76,14 +76,12 @@ dataset_post_fire = load_dataset("DarthReca/california_burned_areas", name="post
 
 ## Training
 The training pipeline is implemented in the scripts/train.py file. The script loads the dataset, creates the training and validation DataLoader instances, and trains the U-Net model for the specified number of epochs.
-
-1. Training Procedure
+### Training Procedure
 2. The dataset is split into training and validation sets.
 3. The model is trained using the Adam optimizer with a learning rate of 1e-3.
 4. For each batch, the model computes a loss using partial cross-entropy, focusing on labeled pixels.
 5. The model is evaluated after each epoch on the validation set.
 6. The model's state is saved after training completes.
-7. Example Command to Train the Model
    
 To start training, run the following command:
 
